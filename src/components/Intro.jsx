@@ -4,11 +4,11 @@ import ComputerImage from "../images/computer.jpg";
 function Intro() {
     return (
         <div className="container" id="intro">
-            <p className="display-4 text-center text-primary py-3" style={{fontWeight: "bold"}}>
+            <p className="intro__header" style={{fontWeight: "bold"}}>
                 Brandon DeBenedictis
             </p>
-            <div className="py-5 d-flex flex-column justify-content-between">
-                <p className="h1 text-light pb-3">I'm a Full Stack Developer and Critical Thinker</p>
+            <div className="intro__container d-flex flex-column justify-content-between">
+                <p className="intro__container--header">I'm a Full Stack Developer and Critical Thinker</p>
                 <p className="text-secondary h5 pb-3">
                     Hello, my name is Brandon and I have a unique background that has led
                     me to where I am today. I initially trained as an airplane mechanic

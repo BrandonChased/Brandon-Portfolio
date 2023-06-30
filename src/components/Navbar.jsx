@@ -12,10 +12,10 @@ function Navbar() {
                 <a href='#education'>Education</a>
                 <a href='#contact-form'>Contact</a>
             </div>
-            {/* <input type="checkbox" class="navBar__checkbox" id="navi-toggle" />
+            {/* <input type="checkbox" className="navBar__checkbox" id="navi-toggle" />
 
-            <label for="navi-toggle" class="navBar__button">
-                <span class="navBar__icon">
+            <label for="navi-toggle" className="navBar__button">
+                <span className="navBar__icon">
                     &nbsp;
                 </span>
             </label> */}

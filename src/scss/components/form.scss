@@ -1,0 +1,33 @@
+.contact-form {
+
+    position: relative;
+
+    &__header {
+        font-size: 2.6rem;
+        
+        @include respond(tab-port) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__label {
+        font-size: 1.8rem;
+
+        @include respond(phone) {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__recieved-message {
+        font-size: 1.3rem;
+        // display: inline-block;
+        background-color: white;
+        color: black;
+        padding: .5rem;
+        position: absolute;
+        right: 0;
+        top: -4rem;
+
+    }
+
+}
