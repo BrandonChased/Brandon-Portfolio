@@ -14,7 +14,6 @@ export default function MediaCard({ title, img, description, link }) {
                     sx={{ height: 250 }}
                     image={img}
                     title={title}
-
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">

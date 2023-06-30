@@ -2,7 +2,6 @@ import React from 'react'
 
 function ContactForm() {
     return (
-        <div>
             <div className='container mb-5'>
                 <div className='card bg-primary'>
                     <div className='card-body'>
@@ -29,7 +28,6 @@ function ContactForm() {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 

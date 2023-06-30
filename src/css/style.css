@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+#root {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  #root {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  #root {
+    font-size: 50%;
+  }
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  padding: 1rem 0;
+  display: flex;
+  background-color: rgba(238, 238, 238, 0.6);
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+.navBar > span {
+  width: 50%;
+  padding-left: 3rem;
+}
+@media (max-width: 56.25em) {
+  .navBar > span {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    display: none;
+  }
+}
+.navBar__items {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 56.25em) {
+  .navBar__items {
+    width: 100%;
+  }
+}
+.navBar__items > a {
+  color: white;
+  font-size: 1rem;
+}
+.navBar__checkbox {
+  display: none;
+}
+.navBar__button {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 15;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s;
+}
+@media (max-width: 56.25em) {
+  .navBar__button {
+    display: initial;
+    top: 4.5rem;
+    right: 0.5rem;
+  }
+}
+.navBar__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  list-style: none;
+}
+.navBar__item {
+  margin: 1rem;
+}
+.navBar__checkbox:checked ~ .navBar__background {
+  transform: scale(80);
+}
+.navBar__checkbox:checked ~ .navBar__nav {
+  opacity: 1;
+  width: 100%;
+}
+.navBar__icon {
+  position: relative;
+  margin-top: 1.5rem;
+}
+.navBar__icon, .navBar__icon::before, .navBar__icon::after {
+  display: inline-block;
+  width: 1rem;
+  height: 2px;
+  background-color: #333;
+}
+.navBar__icon::before, .navBar__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.4s;
+}
+.navBar__icon::before {
+  top: -0.5rem;
+}
+.navBar__icon::after {
+  top: 0.5rem;
+}
+.navBar__button:hover .navBar__icon::before {
+  top: -0.7rem;
+}
+.navBar__button:hover .navBar__icon::after {
+  top: 0.7rem;
+}
+.navBar__checkbox:checked + .navBar__button .navBar__icon {
+  background-color: transparent;
+}
+.navBar__checkbox:checked + .navBar__button .navBar__icon::after {
+  top: 0;
+  transform: rotate(315deg);
+}
+.navBar__checkbox:checked + .navBar__button .navBar__icon::before {
+  top: 0;
+  transform: rotate(-315deg);
+}
+
+/*# sourceMappingURL=style.css.map */
