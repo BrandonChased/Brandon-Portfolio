@@ -3,7 +3,7 @@ import ComputerImage from "../images/computer.jpg";
 
 function Intro() {
     return (
-        <div className="container">
+        <div className="container" id="intro">
             <p className="display-4 text-center text-primary py-3" style={{fontWeight: "bold"}}>
                 Brandon DeBenedictis
             </p>

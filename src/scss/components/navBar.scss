@@ -4,7 +4,7 @@
     z-index: 5;
     padding: 1rem 0;
     display: flex;
-    background-color: rgba($color-grey-light, .6);
+    background-color: $color-grey-light;
     font-size: $font-size-primary;
     white-space: nowrap;
 
@@ -34,7 +34,7 @@
         }
 
         &>a {
-            color: white;
+            color: $color-dark;
             font-size: $font-size-small;
         }
     }
@@ -146,4 +146,8 @@
         }
     }
 
+}
+
+#skills, #projects {
+    scroll-behavior: smooth;
 }

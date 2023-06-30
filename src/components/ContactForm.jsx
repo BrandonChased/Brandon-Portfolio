@@ -2,7 +2,7 @@ import React from 'react'
 
 function ContactForm() {
     return (
-            <div className='container mb-5'>
+            <div className='container mb-5' id='contact-form'>
                 <div className='card bg-primary'>
                     <div className='card-body'>
                         <div className='card-title text-light h2' style={{ textAlign: "left", fontWeight: "bold" }}>

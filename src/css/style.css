@@ -9,6 +9,7 @@
 #root {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 @media (max-width: 75em) {
   #root {
@@ -27,7 +28,7 @@
   z-index: 5;
   padding: 1rem 0;
   display: flex;
-  background-color: rgba(238, 238, 238, 0.6);
+  background-color: #eee;
   font-size: 1.5rem;
   white-space: nowrap;
 }
@@ -55,7 +56,7 @@
   }
 }
 .navBar__items > a {
-  color: white;
+  color: #252A34;
   font-size: 1rem;
 }
 .navBar__checkbox {
@@ -137,6 +138,10 @@
 .navBar__checkbox:checked + .navBar__button .navBar__icon::before {
   top: 0;
   transform: rotate(-315deg);
+}
+
+#skills, #projects {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */
