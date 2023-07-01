@@ -1,9 +1,17 @@
 .intro {
 
     &__header {
+        margin: 4rem;
         font-size: 3rem;
         color: $color-primary;
         text-align: center;
+        transition: all .3s;
+
+        &:hover {
+            transform: rotate(5deg) scale(1.2);
+            background-color: white;
+            border-radius: 1rem;
+        }
 
         @include respond(phone) {
             font-size: 2.3rem;

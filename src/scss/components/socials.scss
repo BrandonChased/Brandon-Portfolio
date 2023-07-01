@@ -20,6 +20,22 @@
         display: none;
     }
 
+    &__container {
+        text-decoration: none !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .2rem 0;
+        
+    }
+    
+    &__name {
+        display: none;
+        width: 8rem;
+        font-size: 1.2rem;
+        color: white;
+    }
+
 
     &__icon {
         width: 30px;

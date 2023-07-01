@@ -12,7 +12,11 @@ import mySQLImg from "../images/skills/mysql.png";
 import javaImg from "../images/skills/java.png";
 import pythonImg from "../images/skills/python.png";
 import sassImg from "../images/skills/sass.png";
-
+import flaskImg from "../images/skills/flask.png";
+import postmanImg from "../images/skills/postman.png";
+import springbootImg from "../images/skills/spring-boot.png";
+import trelloImg from "../images/skills/trello.png";
+import awsImg from "../images/skills/aws.png";
 
 function SkillsOverview() {
     return (
@@ -25,13 +29,18 @@ function SkillsOverview() {
                 <img className='skills__img' src={typescriptImg} alt='typescript' />
                 <img className='skills__img' src={reactImg} alt='react' />
                 <img className='skills__img' src={pythonImg} alt='pyton' />
+                <img className='skills__img' src={flaskImg} alt='flask' /> 
                 <img className='skills__img' src={javaImg} alt='figma' />
+                <img className='skills__img' src={springbootImg} alt='spring-boot' /> 
                 <img className='skills__img' src={nodeImg} alt='node' />
                 <img className='skills__img' src={mongodbImg} alt='mongodb' />
                 <img className='skills__img' src={mySQLImg} alt='mySQL' />
-                <img className='skills__img' src={gitImg} alt='git' />
-                <img className='skills__img' src={figmaImg} alt='figma' /> 
                 <img className='skills__img' src={sassImg} alt='sass' /> 
+                <img className='skills__img' src={gitImg} alt='git' />
+                <img className='skills__img' src={trelloImg} alt='trello' /> 
+                <img className='skills__img' src={figmaImg} alt='figma' /> 
+                <img className='skills__img' src={postmanImg} alt='postman' /> 
+                <img className='skills__img' src={awsImg} alt='aws' /> 
             </div>
         </div>
     )

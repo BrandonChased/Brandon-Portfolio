@@ -145,9 +145,16 @@
 }
 
 .intro__header {
+  margin: 4rem;
   font-size: 3rem;
   color: #446e9b;
   text-align: center;
+  transition: all 0.3s;
+}
+.intro__header:hover {
+  transform: rotate(5deg) scale(1.2);
+  background-color: white;
+  border-radius: 1rem;
 }
 @media (max-width: 37.5em) {
   .intro__header {
@@ -250,6 +257,19 @@
   .socials {
     display: none;
   }
+}
+.socials__container {
+  text-decoration: none !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 0;
+}
+.socials__name {
+  display: none;
+  width: 8rem;
+  font-size: 1.2rem;
+  color: white;
 }
 .socials__icon {
   width: 30px;
