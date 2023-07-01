@@ -228,21 +228,40 @@
 }
 
 .socials {
-  position: absolute;
+  position: fixed;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
   justify-content: space-around;
-  top: 20%;
+  top: 25%;
   width: fit-content;
-  background-color: grey;
+  background-color: gray;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  height: 30vh;
+  z-index: 5;
+}
+@media (max-width: 56.25em) {
+  .socials {
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .socials {
+    display: none;
+  }
 }
 .socials__icon {
   width: 30px;
+}
+.socials__icon:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 990px) {
+  .projectCard {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

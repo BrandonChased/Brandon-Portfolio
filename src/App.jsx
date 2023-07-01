@@ -15,6 +15,7 @@ function App() {
       <SkillsOverview />
       <Projects />
       <ContactForm />
+      
     </div>
   );
 }

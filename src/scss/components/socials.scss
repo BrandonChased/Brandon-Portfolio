@@ -1,25 +1,31 @@
 .socials {
-    position: absolute;
+    position: fixed;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
     padding: 0 1rem;
     justify-content: space-around;
-    top: 20%;
+    top: 25%;
     width: fit-content;
-    background-color: grey;
+    background-color: rgba(grey,1);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    height: 30vh;
+    z-index: 5;
+
+    @include respond(tab-port) {
+        padding: 0 .5rem;
+    }
+
+    @include respond(phone) {
+        display: none;
+    }
+
 
     &__icon {
         width: 30px;
+
         &:hover {
-
+            cursor: pointer;
         }
-    }
-
-    @include respond(tab-port) {
-        // display: none;
     }
 }

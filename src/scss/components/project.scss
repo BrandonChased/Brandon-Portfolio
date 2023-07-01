@@ -1,0 +1,7 @@
+.projectCard {
+
+    @include respond(projects) {
+        width: 100% !important;
+    }
+
+}

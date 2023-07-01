@@ -40,12 +40,20 @@
         // 1200px
     }
 
-    @if $breakpoint == 990 {
-        @media (max-width: 990) {
+    @if $breakpoint == sidenav {
+        @media (max-width: 850px) {
             @content;
         }
 
-        // 1200px
+        // 850px
+    }
+
+    @if $breakpoint == projects {
+        @media (max-width: 990px) {
+            @content;
+        }
+
+        // 990px
     }
 
     // @if $breakpoint == big-desktop {
