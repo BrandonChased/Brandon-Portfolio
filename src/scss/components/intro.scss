@@ -1,14 +1,14 @@
 .intro {
 
     &__header {
-        margin: 4rem;
+        margin-top: 3rem;
         font-size: 3rem;
         color: $color-primary;
         text-align: center;
         transition: all .3s;
 
         &:hover {
-            transform: rotate(5deg) scale(1.2);
+            transform: rotate(2deg) scale(1.2);
             background-color: white;
             border-radius: 1rem;
         }
@@ -19,14 +19,39 @@
     }
 
     &__container {
-
+        width: 100%;
+        display: flex;
+        flex-direction: row;
         font-size: 2.5rem;
         color: white;
+        justify-content: space-between;
+        align-items: end;
+
+        @include respond(tab-land) {
+            display: block;
+        }
 
         &--header {
-
             @include respond(phone) {
                 font-size: 2rem !important;
+            }
+        }
+
+        &--top {
+            width: 45%;
+            padding: 2rem 0;
+
+
+            @include respond(tab-land) {
+                width: 100%;
+            }
+        }
+
+        &--img {
+            width: 45%;
+
+            @include respond(tab-land) {
+                width: 100%;
             }
         }
     }

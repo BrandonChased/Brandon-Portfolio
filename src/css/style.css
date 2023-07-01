@@ -6,10 +6,13 @@
   box-sizing: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #root {
   box-sizing: border-box;
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 @media (max-width: 75em) {
   #root {
@@ -56,8 +59,13 @@
   }
 }
 .navBar__items > a {
+  text-decoration: none;
+  transition: all 0.2s;
   color: #252A34;
   font-size: 1rem;
+}
+.navBar__items > a:hover {
+  transform: scale(1.1);
 }
 .navBar__checkbox {
   display: none;
@@ -140,19 +148,20 @@
   transform: rotate(-315deg);
 }
 
-#skills, #projects {
+#skills,
+#projects {
   scroll-behavior: smooth;
 }
 
 .intro__header {
-  margin: 4rem;
+  margin-top: 3rem;
   font-size: 3rem;
   color: #446e9b;
   text-align: center;
   transition: all 0.3s;
 }
 .intro__header:hover {
-  transform: rotate(5deg) scale(1.2);
+  transform: rotate(2deg) scale(1.2);
   background-color: white;
   border-radius: 1rem;
 }
@@ -162,17 +171,48 @@
   }
 }
 .intro__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   font-size: 2.5rem;
   color: white;
+  justify-content: space-between;
+  align-items: end;
+}
+@media (max-width: 75em) {
+  .intro__container {
+    display: block;
+  }
 }
 @media (max-width: 37.5em) {
   .intro__container--header {
     font-size: 2rem !important;
   }
 }
+.intro__container--top {
+  width: 45%;
+  padding: 2rem 0;
+}
+@media (max-width: 75em) {
+  .intro__container--top {
+    width: 100%;
+  }
+}
+.intro__container--img {
+  width: 45%;
+}
+@media (max-width: 75em) {
+  .intro__container--img {
+    width: 100%;
+  }
+}
 
+.skills__header {
+  display: inline;
+  border-bottom: 5px solid grey;
+}
 .skills__container {
-  padding: 3rem;
+  padding: 1rem 3rem 1rem 3rem;
   margin: 3rem 0;
   display: flex;
   flex-direction: row;
@@ -263,7 +303,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.2rem 0;
+  padding: 0.4rem 0;
 }
 .socials__name {
   display: none;
@@ -278,10 +318,51 @@
   cursor: pointer;
 }
 
+.projects__header {
+  display: inline;
+  border-bottom: 5px solid grey;
+}
+
 @media (max-width: 990px) {
   .projectCard {
     width: 100% !important;
   }
+}
+
+.css-1gikaep-MuiCardMedia-root {
+  transition: all 0.3s;
+}
+.css-1gikaep-MuiCardMedia-root:hover {
+  transform: scale(1.2);
+}
+
+.footer {
+  background-color: #eee;
+  padding: 1rem;
+}
+.footer__top {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__top > span {
+  font-size: 1.6rem;
+  color: black;
+}
+.footer__copyright {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.footer__socials {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: end;
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */

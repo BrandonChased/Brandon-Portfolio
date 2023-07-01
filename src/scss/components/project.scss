@@ -1,7 +1,24 @@
+.projects {
+    
+    &__header {
+        display: inline;
+        border-bottom: 5px solid grey;
+    }
+}
+
+
 .projectCard {
 
     @include respond(projects) {
         width: 100% !important;
     }
 
+}
+
+.css-1gikaep-MuiCardMedia-root {
+
+    transition: all .3s;
+    &:hover {
+        transform: scale(1.2);
+    }
 }

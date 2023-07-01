@@ -64,7 +64,7 @@ function ContactForm() {
     };
 
     return (
-        <div className='container mb-5' id='contact-form'>
+        <div className='contact-form container mb-5' id='contact-form'>
             <div className='card bg-primary'>
                 <div className='card-body'>
                     <div className='card-title text-light contact-form__top' style={{ textAlign: 'left', fontWeight: 'bold' }}>
@@ -76,13 +76,13 @@ function ContactForm() {
                             <label className='py-3 text-light contact-form__label' style={{ textAlign: 'left' }} htmlFor='user_name'>
                                 Name:
                             </label>
-                            <input type='text' className='form-control' name='user_name' id='name' placeholder='Enter your name..' required/>
+                            <input type='text' className='form-control' name='user_name' id='name' placeholder='Enter your name..' required />
                         </div>
                         <div className='form-group d-flex flex-column'>
                             <label className='py-3 text-light contact-form__label' style={{ textAlign: 'left' }} htmlFor='user_email'>
                                 Email:
                             </label>
-                            <input type='email' className='form-control' name='user_email' id='email' placeholder='Enter your email...' required/>
+                            <input type='email' className='form-control' name='user_email' id='email' placeholder='Enter your email...' required />
                         </div>
                         <div className='form-group d-flex flex-column'>
                             <label className='py-3 text-light contact-form__label' style={{ textAlign: 'left' }} htmlFor='message'>

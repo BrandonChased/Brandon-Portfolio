@@ -9,7 +9,6 @@ function Navbar() {
                 <a href='#'>Intro</a>
                 <a href='#skills'>Skills</a>
                 <a href='#projects'>Projects</a>
-                <a href='#education'>Education</a>
                 <a href='#contact-form'>Contact</a>
             </div>
             {/* <input type="checkbox" className="navBar__checkbox" id="navi-toggle" />

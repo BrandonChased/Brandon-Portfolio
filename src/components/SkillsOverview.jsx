@@ -21,7 +21,7 @@ import awsImg from "../images/skills/aws.png";
 function SkillsOverview() {
     return (
         <div className='container skills' id='skills'>
-            <h1 className='text-center text-light'>My Skills</h1>
+            <h1 className='container skills__header text-left text-light'>My Skills</h1>
             <div className='skills__container'>
                 <img className='skills__img' src={cssImage} alt='css' />
                 <img className='skills__img' src={htmlImg} alt='html' />
@@ -29,18 +29,18 @@ function SkillsOverview() {
                 <img className='skills__img' src={typescriptImg} alt='typescript' />
                 <img className='skills__img' src={reactImg} alt='react' />
                 <img className='skills__img' src={pythonImg} alt='pyton' />
-                <img className='skills__img' src={flaskImg} alt='flask' /> 
+                <img className='skills__img' src={flaskImg} alt='flask' />
                 <img className='skills__img' src={javaImg} alt='figma' />
-                <img className='skills__img' src={springbootImg} alt='spring-boot' /> 
+                <img className='skills__img' src={springbootImg} alt='spring-boot' />
                 <img className='skills__img' src={nodeImg} alt='node' />
                 <img className='skills__img' src={mongodbImg} alt='mongodb' />
                 <img className='skills__img' src={mySQLImg} alt='mySQL' />
-                <img className='skills__img' src={sassImg} alt='sass' /> 
+                <img className='skills__img' src={sassImg} alt='sass' />
                 <img className='skills__img' src={gitImg} alt='git' />
-                <img className='skills__img' src={trelloImg} alt='trello' /> 
-                <img className='skills__img' src={figmaImg} alt='figma' /> 
-                <img className='skills__img' src={postmanImg} alt='postman' /> 
-                <img className='skills__img' src={awsImg} alt='aws' /> 
+                <img className='skills__img' src={trelloImg} alt='trello' />
+                <img className='skills__img' src={figmaImg} alt='figma' />
+                <img className='skills__img' src={postmanImg} alt='postman' />
+                <img className='skills__img' src={awsImg} alt='aws' />
             </div>
         </div>
     )
