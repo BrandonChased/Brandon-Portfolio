@@ -2,6 +2,7 @@ import React from 'react'
 import linkedin from "../images/socials/linkedin.png";
 import github from "../images/socials/github.png";
 import mail from "../images/socials/mail.png";
+import CV from "../images/Brandon_Resume_July.pdf"
 
 import resume from "../images/socials/resume.png";
 
@@ -20,7 +21,7 @@ function Socials() {
                 <span className='socials__name'>Mail</span>
                 <img className='socials__icon' src={mail} alt="mail" />
             </a>
-            <a className='socials__container' href=''>
+            <a className='socials__container' href={CV}>
                 <span className='socials__name'>Resume</span>
                 <img className='socials__icon' src={resume} alt="linked in" />
             </a>

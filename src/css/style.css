@@ -313,9 +313,11 @@ html {
 }
 .socials__icon {
   width: 30px;
+  transition: all 0.3s;
 }
 .socials__icon:hover {
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 .projects__header {
